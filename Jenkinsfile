@@ -16,7 +16,8 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Deploying website'
+                sh 'cp index.html /var/www/html/index.html'
+                echo 'Website deployed successfully!'
             }
         }
     }
